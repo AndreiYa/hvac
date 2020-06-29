@@ -1,0 +1,471 @@
+@charset "UTF-8";
+.slider {
+	margin: 0 0 25px 0;
+}
+.slider img {
+	width: 100%;
+}
+
+.slider_container {
+	padding: 0;
+}
+
+.service_wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	margin-top: 80px;
+}
+.service_wrapper .service_item {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 363px;
+	        flex: 0 0 363px;
+	padding: 0 10px;
+	margin-bottom: 80px;
+}
+@media (max-width: 450px) {
+	.service_wrapper .service_item {
+		margin-bottom: 50px;
+	}
+}
+
+.service_img_wrapper {
+	height: 218px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.title {
+	font-family: M700;
+	font-size: 30px;
+	text-align: center;
+	margin: 10px 0;
+}
+
+.service_img_wrapper img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+
+.service_title {
+	margin: 30px 0 15px 0;
+	font-family: M500;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	padding: 0 15px;
+	color: #393933;
+}
+
+.service_title span {
+	font-family: M500;
+	font-size: 20px;
+}
+
+.subtitle {
+	text-align: center;
+	font-family: M300;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 30px 0;
+}
+
+.btn {
+	width: 100%;
+	height: 65px;
+	background-color: #00b4e4;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	border-radius: 5px;
+	-webkit-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+.btn a {
+	font-family: M700;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 22px;
+	-webkit-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+	padding: 15px 80px;
+}
+
+.btn:hover {
+	background-color: #fff;
+	border: 1px solid #00b4e4;
+}
+.btn:hover a {
+	color: #00b4e4;
+}
+
+.reviews {
+	margin-bottom: 80px;
+}
+
+.yelp_rating_wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-bottom: 50px;
+}
+
+.yelp_btn {
+	width: 200px;
+	height: 50px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	background-color: #00b4e4;
+	border-radius: 5px;
+}
+.yelp_btn a {
+	color: #fff;
+	font-family: M500;
+	font-size: 20px;
+	-webkit-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+	padding: 25px;
+}
+.yelp_btn a:hover {
+	color: #00b4e4;
+}
+
+.yelp_btn:hover {
+	background-color: #fff;
+	border: 1px solid #00b4e4;
+}
+.yelp_btn:hover a {
+	color: #00b4e4;
+}
+
+.yelp_stars .number {
+	font-family: M700;
+	font-size: 22px;
+	display: inline-block;
+	margin-right: 5px;
+}
+.yelp_stars span:before {
+	content: "";
+	display: inline-block;
+	font-family: "Font Awesome 5 Pro", "Font Awesome 5 Brands";
+	font-weight: 700;
+	font-size: 22px;
+	color: #ffb400;
+}
+.yelp_stars .all_reviews {
+	display: inline-block;
+	font-family: M500;
+	font-size: 12px;
+	color: #333333;
+	margin-left: 5px;
+}
+
+.yelp_title {
+	font-size: 22px;
+	font-family: M500;
+	margin: 15px 0;
+}
+.yelp_title span {
+	margin-right: 10px;
+}
+.yelp_title span:before {
+	content: "";
+	display: inline-block;
+	font-family: "Font Awesome 5 Pro", "Font Awesome 5 Brands";
+	font-weight: 700;
+	font-size: 36px;
+	color: #c62a31;
+}
+
+.review_item {
+	width: 390px;
+}
+.review_item .author {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	padding: 15px 15px 15px 35px;
+}
+.review_item .author .author_img {
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+}
+.review_item .author .author_img img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: contain;
+	   object-fit: contain;
+}
+.review_item .author .author_descr {
+	margin-left: 10px;
+}
+.review_item .author .author_descr .author_name {
+	font-family: M500;
+	font-size: 16px;
+	margin-top: 10px;
+}
+.review_item .author .author_descr .author_rate span:before {
+	content: "";
+	display: inline-block;
+	font-family: "Font Awesome 5 Pro", "Font Awesome 5 Brands";
+	font-weight: 700;
+	font-size: 16px;
+	color: #ffb400;
+	margin: 10px 0;
+}
+.review_item .author .author_descr .author_date {
+	font-family: M300;
+	font-size: 12px;
+	color: #393939;
+}
+.review_item .review_content {
+	padding: 15px 40px;
+	font-family: M500;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: justify;
+}
+
+.yelp {
+	color: black;
+}
+
+.review_post_on {
+	margin: 25px 15px 15px 45px;
+}
+.review_post_on div {
+	font-family: M100;
+	margin-left: 30px;
+	font-size: 10px;
+}
+.review_post_on a {
+	font-family: M500;
+	font-size: 20px;
+}
+.review_post_on span:before {
+	content: "";
+	display: inline-block;
+	font-family: "Font Awesome 5 Pro", "Font Awesome 5 Brands";
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 16px;
+	color: #c62a31;
+	margin-right: 10px;
+}
+
+.content_block {
+	overflow: hidden;
+	position: relative;
+}
+
+.content_block.hide {
+	height: 180px;
+}
+
+.content_block.hide:after {
+	content: "";
+	display: block;
+	height: 100px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(75%, #fff));
+	background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0), #fff 75%);
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 75%);
+}
+
+/* Кнопка */
+.content_toggle {
+	display: inline-block;
+	padding: 15px 20px;
+	background: #00b4e4;
+	font-size: 16px;
+	text-decoration: none;
+	color: #fff;
+	margin-bottom: 20px;
+	margin-left: 40px;
+	border-radius: 5px;
+	border: 1px solid #00b4e4;
+}
+
+.content_toggle:hover {
+	color: #00b4e4;
+	background: #fff;
+	border: 1px solid #00b4e4;
+}
+
+.content_toggle:active {
+	background: #34106d;
+}
+
+.work_with_title {
+	font-size: 24px;
+	margin-top: 40px;
+}
+
+.label_wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	margin: 20px 0;
+}
+.label_wrapper .label_item {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 20%;
+	        flex: 0 0 20%;
+	height: 60px;
+	margin: 20px 0;
+}
+.label_wrapper .label_item img {
+	display: block;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.breadcrumbs {
+	margin: 40px 0;
+	background: #00b4e4;
+}
+
+.keywords_title {
+	padding: 20px 0 10px 0;
+	text-align: center;
+	color: #fff;
+	font-family: M700;
+	font-size: 24px;
+	letter-spacing: 2px;
+	line-height: 32px;
+}
+
+.keywords_subtitle {
+	text-align: center;
+	font-size: 18px;
+	padding-bottom: 15px;
+	color: #e0e0e0;
+}
+
+.air_install_title {
+	margin: 40px 0 20px 0;
+}
+
+.air_install_content_wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.air_install_content_wrapper .air_install_content {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 60%;
+	        flex: 0 0 60%;
+}
+.air_install_content_wrapper .air_install_content p {
+	margin: 10px 0;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: justify;
+}
+.air_install_content_wrapper .air_install_img {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 40%;
+	        flex: 0 0 40%;
+}
+.air_install_content_wrapper .air_install_img img {
+	max-width: 100%;
+}
+
+.air_repair_title {
+	margin-top: 50px;
+}
+
+.air_repair_content_wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.air_repair_content_wrapper .air_repair_content {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 60%;
+	        flex: 0 0 60%;
+	padding: 0 15px;
+}
+.air_repair_content_wrapper .air_repair_content p {
+	margin: 10px 0;
+	font-size: 16px;
+	line-height: 28px;
+	text-align: justify;
+}
+.air_repair_content_wrapper .air_repair_img {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 40%;
+	        flex: 0 0 40%;
+}
+.air_repair_content_wrapper .air_repair_img img {
+	max-width: 100%;
+}
+
+.p_small {
+	padding-left: 20px;
+	line-height: 28px;
+}
+
+h4 {
+	font-family: M700;
+	font-size: 20px;
+	padding: 10px 0;
+}
