@@ -545,6 +545,9 @@
 		-webkit-box-flex: 0;
 		    -ms-flex: 0 0 100%;
 		        flex: 0 0 100%;
+		-webkit-box-ordinal-group: 1;
+		    -ms-flex-order: 0;
+		        order: 0;
 	}
 }
 .air_install_content_wrapper .air_install_content p {
@@ -566,6 +569,9 @@
 		-webkit-box-flex: 0;
 		    -ms-flex: 0 0 100%;
 		        flex: 0 0 100%;
+		-webkit-box-ordinal-group: 2;
+		    -ms-flex-order: 1;
+		        order: 1;
 	}
 }
 
@@ -595,9 +601,6 @@
 	-webkit-box-flex: 0;
 	    -ms-flex: 0 0 60%;
 	        flex: 0 0 60%;
-	-webkit-box-ordinal-group: 1;
-	    -ms-flex-order: 0;
-	        order: 0;
 	padding: 0 15px;
 }
 @media (max-width: 991px) {
@@ -605,6 +608,9 @@
 		-webkit-box-flex: 0;
 		    -ms-flex: 0 0 100%;
 		        flex: 0 0 100%;
+		-webkit-box-ordinal-group: 1;
+		    -ms-flex-order: 0;
+		        order: 0;
 	}
 }
 .air_repair_content_wrapper .air_repair_content p {
