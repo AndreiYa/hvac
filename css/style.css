@@ -5023,6 +5023,9 @@ body.ie .ibg img {
 }
 .first-menu {
 	background-color: #00b4e4;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
 }
 
 .header_container {
@@ -5134,8 +5137,14 @@ body.ie .ibg img {
 	}
 }
 .second-menu {
+	padding-top: 50px;
 	-webkit-box-shadow: 0 14px 28px rgba(241, 241, 241, 0.25), 0 10px 10px rgba(240, 240, 240, 0.22);
 	        box-shadow: 0 14px 28px rgba(241, 241, 241, 0.25), 0 10px 10px rgba(240, 240, 240, 0.22);
+}
+@media (max-width: 450px) {
+	.second-menu {
+		padding-top: 40px;
+	}
 }
 
 .nav_menu {
