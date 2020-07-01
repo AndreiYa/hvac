@@ -5189,7 +5189,7 @@ body.ie .ibg img {
 }
 @media (max-width: 991px) and (max-width: 450px) {
 	.icon-menu {
-		top: 20px;
+		top: 15px;
 	}
 }
 @media (max-width: 991px) {
@@ -5384,7 +5384,7 @@ body.ie .ibg img {
 
 @media (max-width: 450px) {
 	.nav_menu {
-		padding: 5px 0;
+		padding: 2px 0;
 	}
 }
 .logo_wrapper {
@@ -5398,7 +5398,7 @@ body.ie .ibg img {
 @media (max-width: 450px) {
 	.logo_wrapper img {
 		height: 40px;
-		margin: 5px 0;
+		margin: 3px 0 2px 0;
 	}
 }
 .menu__body .menu__list {
@@ -6215,6 +6215,7 @@ hr {
 	font-size: 16px;
 	line-height: 30px;
 	text-align: justify;
+	color: #333333;
 }
 .air_install_content_wrapper .air_install_img {
 	-webkit-box-flex: 0;
