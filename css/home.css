@@ -657,10 +657,27 @@ h4 {
 	max-width: 300px;
 	height: 300px;
 	overflow: hidden;
+	margin: 5px;
 }
 .gallery-block__item img {
 	width: 100%;
 	height: 100%;
 	-o-object-fit: cover;
 	   object-fit: cover;
+}
+
+#air_installation:before,
+#air_replacement:before,
+#air_repair:before,
+#air_maintenance,
+#air_ductless,
+#heating_installation,
+#heating_replacement,
+#heating_repair,
+#heating_maintenance,
+#air_ductless {
+	content: "";
+	display: block;
+	height: 45px;
+	margin: -45px 0 0;
 }
