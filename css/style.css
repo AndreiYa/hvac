@@ -5,7 +5,7 @@
 	src: url("../fonts/MuseoSans/MuseoSans-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSans-700.woff2") format("woff2"), url("../fonts/MuseoSans/MuseoSans-700.woff") format("woff");
 	font-weight: 600;
 	font-style: normal;
-	font-display: swap;
+	font-display: fallback;
 }
 @font-face {
 	font-family: "M500";
