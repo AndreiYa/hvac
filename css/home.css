@@ -670,13 +670,13 @@ h4 {
 #air_installation:before,
 #air_replacement:before,
 #air_repair:before,
-#air_maintenance,
-#air_ductless,
-#heating_installation,
-#heating_replacement,
-#heating_repair,
-#heating_maintenance,
-#air_ductless {
+#air_maintenance:before,
+#air_ductless:before,
+#heating_installation:before,
+#heating_replacement:before,
+#heating_repair:before,
+#heating_maintenance:before,
+#heating_ductless:before {
 	content: "";
 	display: block;
 	height: 45px;

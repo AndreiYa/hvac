@@ -751,6 +751,12 @@ if (iconMenu) {
 		menuBody.classList.toggle("active");
 	});
 }
+$(document).ready(function(){
+	$('.sub_link').click(function () {
+		 $(".menu__body").removeClass('active');
+		 $(".icon-menu").removeClass('active');
+	});
+});
 
 //ZOOM
 if ($('.gallery').length > 0) {
