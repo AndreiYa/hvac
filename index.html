@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<meta name="format-detection" content="telephone=no">
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="shortcut icon" href="img/logo/favicon.ico">
 		<!-- <meta name="robots" content="noindex, nofollow"> -->
 		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +31,12 @@
 			<nav class="nav_menu">
 				<div class="logo_wrapper">
 					<a href="index.html">
-						<img src="img/logo/logo_v3.png" alt="main_logo">
+						<picture>
+							<source srcset="img/logo/logo_v3.webp" media="(max-width: 1000px) type="image/webp">
+							<source srcset="img/logo/logo_v3560.webp" media="(max-width: 560px)">
+							<source srcset="img/logo/logo_v3.webp" type="image/webp">
+							<img src="img/logo/logo_v3.png" alt="png" />
+						 </picture>
 					</a>
 				</div>
 				<div class="header__menu menu">
@@ -75,8 +80,8 @@
 			<div class="slider">
 				<div>
 					<picture>
-						<source srcset="img/slider/main photo_on.webp" media="(max-width: 1000px) type="image/webp">
-						<source srcset="img/slider/main photo_on.webp" media="(max-width: 560px)">
+						<source srcset="img/slider/main photo_on1000.webp" media="(max-width: 1000px) type="image/webp">
+						<source srcset="img/slider/main photo_on560.webp" media="(max-width: 560px)">
 						<source srcset="img/slider/main photo_on.webp" type="image/webp">
 						<img src="img/slider/main photo_on.jpg" alt="jpg" />
 					 </picture>
@@ -540,8 +545,7 @@
 			<div class="popup-video__value video"></div>
 		</div>
 	</div>
-</div><script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script> -->
+</div><script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="js/vendors.js"></script>
 <script src="js/main.js"></script>
 <script src="js/custom.js" ></script>
