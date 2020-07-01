@@ -755,6 +755,7 @@ $(document).ready(function(){
 	$('.sub_link').click(function () {
 		 $(".menu__body").removeClass('active');
 		 $(".icon-menu").removeClass('active');
+		 $("body").removeClass('lock');
 	});
 });
 
