@@ -109,6 +109,7 @@ h6 {
 body {
 	color: #000;
 	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
 }
 body.lock {
 	overflow: hidden;
