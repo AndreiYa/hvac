@@ -747,7 +747,7 @@ let menuBody = document.querySelector(".menu__body");
 if (iconMenu) {
 	iconMenu.addEventListener("click", function () {
 		iconMenu.classList.toggle("active");
-		body.classList.toggle("lock");
+		// body.classList.toggle("lock");
 		menuBody.classList.toggle("active");
 	});
 }
@@ -755,7 +755,7 @@ $(document).ready(function(){
 	$('.sub_link').click(function () {
 		 $(".menu__body").removeClass('active');
 		 $(".icon-menu").removeClass('active');
-		 $("body").removeClass('lock');
+		//  $("body").removeClass('lock');
 	});
 });
 
