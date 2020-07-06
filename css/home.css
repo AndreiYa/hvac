@@ -683,3 +683,54 @@ h4 {
 	height: 45px;
 	margin: -45px 0 0;
 }
+
+.air_conditioner_installation_content {
+	float: left;
+	text-align: justify;
+}
+.air_conditioner_installation_content .right_float_img {
+	float: right;
+	padding-left: 10px;
+	width: 15%;
+}
+@media (max-width: 991px) {
+	.air_conditioner_installation_content .right_float_img {
+		width: 30%;
+	}
+}
+@media (max-width: 650px) {
+	.air_conditioner_installation_content .right_float_img {
+		width: 40%;
+	}
+}
+@media (max-width: 450px) {
+	.air_conditioner_installation_content .right_float_img {
+		width: 45%;
+	}
+}
+.air_conditioner_installation_content .left_float_img {
+	float: left;
+	padding-right: 10px;
+	width: 20%;
+}
+@media (min-width: 451px) {
+	.air_conditioner_installation_content .left_float_img {
+		display: none;
+	}
+}
+@media (max-width: 450px) {
+	.air_conditioner_installation_content .left_float_img {
+		width: 45%;
+	}
+}
+.air_conditioner_installation_content p {
+	margin: 10px 0;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: justify;
+	color: #747579;
+}
+
+.clear_fix {
+	clear: both;
+}
