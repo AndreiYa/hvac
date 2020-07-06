@@ -135,6 +135,11 @@
 		height: 144px;
 	}
 }
+@media (max-width: 350px) {
+	.subtitle {
+		height: 160px;
+	}
+}
 
 .btn {
 	width: 100%;
