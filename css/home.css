@@ -2,6 +2,11 @@
 .slider {
 	margin: 0 0 25px 0;
 }
+@media (max-width: 450px) {
+	.slider {
+		margin: 0 0 10px 0;
+	}
+}
 .slider img {
 	width: 100%;
 }
@@ -15,37 +20,50 @@
 	padding: 0;
 }
 
-.service_wrapper {
+.service_row {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
-	-webkit-box-align: start;
-	    -ms-flex-align: start;
-	        align-items: flex-start;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-	margin-top: 80px;
+	margin-top: 50px -15px 0 -15px;
 }
 @media (max-width: 450px) {
-	.service_wrapper {
-		margin-top: 20px;
+	.service_row {
+		margin-top: 15px;
 	}
 }
-.service_wrapper .service_item {
+.service_row .service_column {
 	-webkit-box-flex: 0;
-	    -ms-flex: 0 0 363px;
-	        flex: 0 0 363px;
-	padding: 0 10px;
-	margin-bottom: 80px;
+	    -ms-flex: 0 1 33%;
+	        flex: 0 1 33%;
+	padding: 0 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 50px;
+}
+.service_row .service_column .service_item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 @media (max-width: 750px) {
-	.service_wrapper .service_item {
+	.service_row .service_column {
 		margin-bottom: 30px;
 		-webkit-box-flex: 0;
-		    -ms-flex: 0 0 50%;
-		        flex: 0 0 50%;
+		    -ms-flex: 0 1 50%;
+		        flex: 0 1 50%;
 		padding: 0 5px;
 	}
 }
@@ -55,7 +73,12 @@
 	overflow: hidden;
 	border-radius: 5px;
 }
-@media (max-width: 750px) {
+@media (max-width: 1292px) {
+	.service_img_wrapper {
+		height: 280px;
+	}
+}
+@media (max-width: 991px) {
 	.service_img_wrapper {
 		height: 250px;
 	}
@@ -81,7 +104,7 @@
 }
 
 .service_title {
-	margin: 30px 0 15px 0;
+	margin: 15px 0 0 0;
 	font-family: M500;
 	font-size: 20px;
 	line-height: 28px;
@@ -91,17 +114,18 @@
 }
 @media (max-width: 750px) {
 	.service_title {
-		font-size: 16px;
+		font-size: 17.5px;
 		padding: 0;
 		margin: 5px 0 10px 0;
 	}
 }
-
 @media (max-width: 530px) {
-	.marg {
-		margin-bottom: 37px;
+	.service_title {
+		margin: 5px 0 5px 0;
+		line-height: 20px;
 	}
 }
+
 .service_title span {
 	font-family: M500;
 	font-size: 20px;
@@ -114,46 +138,34 @@
 
 .subtitle {
 	text-align: center;
-	font-family: M500;
+	font-family: M100;
 	font-size: 16px;
 	line-height: 24px;
-	margin: 30px 0;
+	margin: 20px 0;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 1 auto;
+	        flex: 1 1 auto;
 }
 @media (max-width: 750px) {
 	.subtitle {
 		font-size: 12px;
 		margin: 5px 0 10px 0;
+		line-height: 20px;
 	}
 }
-@media (max-width: 450px) {
-	.subtitle {
-		height: 140px;
-	}
+
+.subtitle {
+	color: #000000;
 }
-@media (max-width: 375px) {
-	.subtitle {
-		height: 144px;
-	}
-}
-@media (max-width: 350px) {
-	.subtitle {
-		height: 160px;
-	}
+
+.service_item:hover .service_title, .service_item:hover .subtitle {
+	color: #797979;
 }
 
 .btn {
 	width: 100%;
 	height: 65px;
 	background-color: #00b4e4;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
 	border-radius: 5px;
 	-webkit-transition: all 0.1s ease;
 	-o-transition: all 0.1s ease;
@@ -172,11 +184,20 @@
 	-webkit-transition: all 0.1s ease;
 	-o-transition: all 0.1s ease;
 	transition: all 0.1s ease;
-	padding: 15px 80px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 100%;
+	height: 100%;
 }
 @media (max-width: 750px) {
 	.btn a {
-		padding: 0;
 		font-size: 16px;
 	}
 }
@@ -519,6 +540,7 @@
 	font-size: 24px;
 	letter-spacing: 2px;
 	line-height: 32px;
+	text-transform: uppercase;
 }
 @media (max-width: 450px) {
 	.keywords_title {
@@ -530,6 +552,7 @@
 	text-align: center;
 	font-size: 18px;
 	padding-bottom: 15px;
+	text-transform: uppercase;
 	color: #e0e0e0;
 }
 
@@ -699,13 +722,60 @@ h4 {
 	margin: -45px 0 0;
 }
 
+.air_conditioner_content {
+	float: left;
+	text-align: justify;
+}
+.air_conditioner_content .right_float_img {
+	float: left;
+	padding-right: 5px;
+	width: 15%;
+}
+@media (max-width: 991px) {
+	.air_conditioner_content .right_float_img {
+		width: 30%;
+	}
+}
+@media (max-width: 750px) {
+	.air_conditioner_content .right_float_img {
+		width: 50%;
+	}
+}
+@media (min-width: 749px) {
+	.air_conditioner_content .right_float_img {
+		display: none;
+	}
+}
+.air_conditioner_content .left_float_img {
+	float: right;
+	padding-left: 5px;
+	width: 35%;
+}
+@media (max-width: 1292px) {
+	.air_conditioner_content .left_float_img {
+		width: 40%;
+	}
+}
+@media (max-width: 991px) {
+	.air_conditioner_content .left_float_img {
+		width: 50%;
+	}
+}
+.air_conditioner_content p {
+	margin: 10px 0;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: justify;
+	color: #747579;
+}
+
 .air_conditioner_installation_content {
 	float: left;
 	text-align: justify;
 }
 .air_conditioner_installation_content .right_float_img {
 	float: left;
-	padding-left: 10px;
+	padding-left: 5px;
 	width: 15%;
 }
 @media (max-width: 991px) {
@@ -725,20 +795,124 @@ h4 {
 }
 .air_conditioner_installation_content .left_float_img {
 	float: right;
-	padding-right: 10px;
-	width: 20%;
+	padding-right: 5px;
+	width: 18%;
 }
-@media (max-width: 450px) {
+@media (max-width: 1292px) {
 	.air_conditioner_installation_content .left_float_img {
-		width: 45%;
+		width: 20%;
 	}
 }
-@media (max-width: 450px) {
+@media (max-width: 991px) {
+	.air_conditioner_installation_content .left_float_img {
+		width: 30%;
+	}
+}
+@media (max-width: 650px) {
 	.air_conditioner_installation_content .left_float_img {
 		width: 45%;
 	}
 }
 .air_conditioner_installation_content p {
+	margin: 10px 0;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: justify;
+	color: #747579;
+}
+
+.air_conditioner_replacement_content {
+	float: left;
+	text-align: justify;
+}
+.air_conditioner_replacement_content .right_float_img {
+	float: left;
+	padding-right: 5px;
+	width: 15%;
+}
+@media (max-width: 991px) {
+	.air_conditioner_replacement_content .right_float_img {
+		width: 30%;
+	}
+}
+@media (max-width: 750px) {
+	.air_conditioner_replacement_content .right_float_img {
+		width: 50%;
+	}
+}
+@media (min-width: 749px) {
+	.air_conditioner_replacement_content .right_float_img {
+		display: none;
+	}
+}
+.air_conditioner_replacement_content .left_float_img {
+	float: right;
+	padding-left: 5px;
+	width: 30%;
+}
+@media (max-width: 1292px) {
+	.air_conditioner_replacement_content .left_float_img {
+		width: 40%;
+	}
+}
+@media (max-width: 991px) {
+	.air_conditioner_replacement_content .left_float_img {
+		width: 50%;
+	}
+}
+.air_conditioner_replacement_content p {
+	margin: 10px 0;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: justify;
+	color: #747579;
+}
+
+.air_conditioner_maintenance_content {
+	float: left;
+	text-align: justify;
+}
+.air_conditioner_maintenance_content .right_float_img {
+	float: left;
+	padding-left: 5px;
+	width: 15%;
+}
+@media (max-width: 991px) {
+	.air_conditioner_maintenance_content .right_float_img {
+		width: 30%;
+	}
+}
+@media (max-width: 650px) {
+	.air_conditioner_maintenance_content .right_float_img {
+		width: 50%;
+	}
+}
+@media (min-width: 451px) {
+	.air_conditioner_maintenance_content .right_float_img {
+		display: none;
+	}
+}
+.air_conditioner_maintenance_content .left_float_img {
+	float: right;
+	padding-right: 5px;
+	width: 18%;
+}
+@media (max-width: 1292px) {
+	.air_conditioner_maintenance_content .left_float_img {
+		width: 20%;
+	}
+}
+@media (max-width: 991px) {
+	.air_conditioner_maintenance_content .left_float_img {
+		width: 30%;
+	}
+}
+@media (max-width: 650px) {
+	.air_conditioner_maintenance_content .left_float_img {
+		width: 50%;
+	}
+}
+.air_conditioner_maintenance_content p {
 	margin: 10px 0;
 	font-size: 16px;
 	line-height: 30px;
