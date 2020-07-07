@@ -1143,17 +1143,7 @@ h4 {
 .commercial_content .left_float_img {
 	float: right;
 	padding-right: 0 5px;
-	width: 25%;
-}
-@media (max-width: 1292px) {
-	.commercial_content .left_float_img {
-		width: 35%;
-	}
-}
-@media (max-width: 991px) {
-	.commercial_content .left_float_img {
-		width: 40%;
-	}
+	width: 45%;
 }
 @media (max-width: 650px) {
 	.commercial_content .left_float_img {
