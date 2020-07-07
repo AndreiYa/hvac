@@ -145,6 +145,7 @@
 	-webkit-box-flex: 1;
 	    -ms-flex: 1 1 auto;
 	        flex: 1 1 auto;
+	color: #393939;
 }
 @media (max-width: 750px) {
 	.subtitle {
@@ -152,10 +153,6 @@
 		margin: 5px 0 10px 0;
 		line-height: 20px;
 	}
-}
-
-.subtitle {
-	color: #000000;
 }
 
 @media (min-width: 1200px) {
