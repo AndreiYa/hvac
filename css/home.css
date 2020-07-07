@@ -138,7 +138,7 @@
 
 .subtitle {
 	text-align: center;
-	font-family: M100;
+	font-family: M300;
 	font-size: 16px;
 	line-height: 24px;
 	margin: 20px 0;
@@ -386,7 +386,7 @@
 	margin: 25px 15px 15px 45px;
 }
 .review_post_on div {
-	font-family: M100;
+	font-family: M300;
 	margin-left: 30px;
 	font-size: 10px;
 }
@@ -869,6 +869,53 @@ h4 {
 	color: #747579;
 }
 
+.air_conditioner_ductless_content {
+	float: left;
+	text-align: justify;
+}
+.air_conditioner_ductless_content .right_float_img {
+	float: left;
+	padding-right: 5px;
+	width: 15%;
+}
+@media (max-width: 991px) {
+	.air_conditioner_ductless_content .right_float_img {
+		width: 30%;
+	}
+}
+@media (max-width: 750px) {
+	.air_conditioner_ductless_content .right_float_img {
+		width: 50%;
+	}
+}
+@media (min-width: 749px) {
+	.air_conditioner_ductless_content .right_float_img {
+		display: none;
+	}
+}
+.air_conditioner_ductless_content .left_float_img {
+	float: right;
+	padding-left: 5px;
+	width: 30%;
+}
+@media (max-width: 1292px) {
+	.air_conditioner_ductless_content .left_float_img {
+		width: 40%;
+	}
+}
+@media (max-width: 991px) {
+	.air_conditioner_ductless_content .left_float_img {
+		width: 50%;
+	}
+}
+.air_conditioner_ductless_content p {
+	margin: 10px 0;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: justify;
+	color: #747579;
+}
+
 .air_conditioner_maintenance_content {
 	float: left;
 	text-align: justify;
@@ -914,6 +961,209 @@ h4 {
 	}
 }
 .air_conditioner_maintenance_content p {
+	margin: 10px 0;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: justify;
+	color: #747579;
+}
+
+.furnace_installation_content {
+	float: left;
+	text-align: justify;
+}
+.furnace_installation_content .right_float_img {
+	float: left;
+	padding: 0 5px;
+	width: 30%;
+}
+@media (max-width: 991px) {
+	.furnace_installation_content .right_float_img {
+		width: 45%;
+	}
+}
+@media (min-width: 990px) {
+	.furnace_installation_content .right_float_img {
+		display: none;
+	}
+}
+.furnace_installation_content .left_float_img {
+	float: right;
+	padding: 0 5px;
+	width: 25%;
+}
+@media (max-width: 1292px) {
+	.furnace_installation_content .left_float_img {
+		width: 25%;
+	}
+}
+@media (max-width: 991px) {
+	.furnace_installation_content .left_float_img {
+		width: 45%;
+	}
+}
+@media (max-width: 650px) {
+	.furnace_installation_content .left_float_img {
+		width: 50%;
+	}
+}
+.furnace_installation_content p {
+	margin: 10px 0;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: justify;
+	color: #747579;
+}
+
+.air_furnace_replacement_content {
+	float: left;
+	text-align: justify;
+}
+.air_furnace_replacement_content .right_float_img {
+	float: left;
+	padding-left: 0 5px;
+	width: 25%;
+}
+@media (max-width: 991px) {
+	.air_furnace_replacement_content .right_float_img {
+		width: 30%;
+	}
+}
+@media (max-width: 650px) {
+	.air_furnace_replacement_content .right_float_img {
+		width: 50%;
+	}
+}
+@media (min-width: 649px) {
+	.air_furnace_replacement_content .right_float_img {
+		display: none;
+	}
+}
+.air_furnace_replacement_content .left_float_img {
+	float: right;
+	padding-right: 0 5px;
+	width: 25%;
+}
+@media (max-width: 1292px) {
+	.air_furnace_replacement_content .left_float_img {
+		width: 35%;
+	}
+}
+@media (max-width: 991px) {
+	.air_furnace_replacement_content .left_float_img {
+		width: 40%;
+	}
+}
+@media (max-width: 650px) {
+	.air_furnace_replacement_content .left_float_img {
+		width: 50%;
+	}
+}
+.air_furnace_replacement_content p {
+	margin: 10px 0;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: justify;
+	color: #747579;
+}
+
+.furnace_repair_content {
+	float: left;
+	text-align: justify;
+}
+.furnace_repair_content .right_float_img {
+	float: left;
+	padding-left: 0 5px;
+	width: 25%;
+}
+@media (max-width: 991px) {
+	.furnace_repair_content .right_float_img {
+		width: 30%;
+	}
+}
+@media (max-width: 650px) {
+	.furnace_repair_content .right_float_img {
+		width: 50%;
+	}
+}
+@media (min-width: 649px) {
+	.furnace_repair_content .right_float_img {
+		display: none;
+	}
+}
+.furnace_repair_content .left_float_img {
+	float: right;
+	padding-right: 0 5px;
+	width: 25%;
+}
+@media (max-width: 1292px) {
+	.furnace_repair_content .left_float_img {
+		width: 35%;
+	}
+}
+@media (max-width: 991px) {
+	.furnace_repair_content .left_float_img {
+		width: 40%;
+	}
+}
+@media (max-width: 650px) {
+	.furnace_repair_content .left_float_img {
+		width: 50%;
+	}
+}
+.furnace_repair_content p {
+	margin: 10px 0;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: justify;
+	color: #747579;
+}
+
+.commercial_content {
+	float: left;
+	text-align: justify;
+}
+.commercial_content .right_float_img {
+	float: left;
+	padding-left: 0 5px;
+	width: 25%;
+}
+@media (max-width: 991px) {
+	.commercial_content .right_float_img {
+		width: 30%;
+	}
+}
+@media (max-width: 650px) {
+	.commercial_content .right_float_img {
+		width: 50%;
+	}
+}
+@media (min-width: 649px) {
+	.commercial_content .right_float_img {
+		display: none;
+	}
+}
+.commercial_content .left_float_img {
+	float: right;
+	padding-right: 0 5px;
+	width: 25%;
+}
+@media (max-width: 1292px) {
+	.commercial_content .left_float_img {
+		width: 35%;
+	}
+}
+@media (max-width: 991px) {
+	.commercial_content .left_float_img {
+		width: 40%;
+	}
+}
+@media (max-width: 650px) {
+	.commercial_content .left_float_img {
+		width: 55%;
+	}
+}
+.commercial_content p {
 	margin: 10px 0;
 	font-size: 16px;
 	line-height: 30px;
